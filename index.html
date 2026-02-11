@@ -229,7 +229,7 @@ section.show {
 
 .contact-info {
   flex: 1 1 350px;
-  background: #fff0f0;
+  background: #000000;
   padding: 35px;
   border-radius: 25px;
   display: flex;
@@ -239,17 +239,17 @@ section.show {
 }
 
 .contact-info h3 {
-  color: #ff6b6b;
+  color: #ffffff;
   font-size: 22px;
 }
 
 .contact-info p {
   font-size: 16px;
-  color: #334155;
+  color: #ffffff;
 }
 
 .contact-info p i {
-  background: #ff6b6b;
+  background: #000000;
   color: white;
   border-radius: 50%;
   padding: 8px;
@@ -272,8 +272,8 @@ input, textarea {
 
 button {
   padding: 14px 45px;
-  background: #ff6b6b;
-  color: white;
+  background: #ffffff;
+  color: black;
   border: none;
   border-radius: 25px;
   font-weight: 600;
@@ -282,7 +282,7 @@ button {
 }
 
 button:hover {
-  background: #ff3b3b;
+  background: #3a3939;
   transform: scale(1.05);
 }
 
@@ -392,7 +392,7 @@ This website is a small step toward sharing my journey, my work, and the things 
 
 <section id="contact">
   <div class="contact-form">
-    <h1>Contact Me</h1>
+    <h1 style="color: white;">Contact Me</h1>
 <form id="contactForm" method="post" action="https://formspree.io/f/xkovwrke">
   <input type="text" name="name" placeholder="Your Name" required>
   <input type="email" name="email" placeholder="Your Email" required>
@@ -433,6 +433,7 @@ sections.forEach(sec => observer.observe(sec));
 </body>
 
 </html>
+
 
 
 
