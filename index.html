@@ -31,13 +31,15 @@ body{
   scroll-behavior:smooth;
 }
 
-/* ================= HEADER ================= */
+/* ================= HEADER (GLASS) ================= */
 header{
   position:fixed;
   top:0;
   width:100%;
   z-index:1000;
-  background:#000000; /* PURE BLACK */
+
+  background:var(--glass-bg);
+  backdrop-filter:blur(18px);
   border-bottom:1px solid var(--glass-border);
 }
 
@@ -77,14 +79,13 @@ header{
   width:100%;
 }
 
-/* ================= SECTIONS ================= */
+/* ================= SECTIONS (GLASS) ================= */
 section{
   max-width:1200px;
   margin:120px auto 70px;
   padding:70px 6%;
   border-radius:28px;
 
-  /* GLASS EFFECT */
   background:var(--glass-bg);
   backdrop-filter:blur(18px);
   border:1px solid var(--glass-border);
@@ -106,7 +107,6 @@ section.show{
   flex-wrap:wrap;
   align-items:center;
   gap:60px;
-  background:transparent; /* stays black */
 }
 
 .home-text{
@@ -285,6 +285,7 @@ footer{
 </style>
 
 
+
 </head>
 
 <body>
@@ -385,5 +386,6 @@ sections.forEach(sec=>observer.observe(sec));
 
 </body>
 </html>
+
 
 
