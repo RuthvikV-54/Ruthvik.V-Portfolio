@@ -80,20 +80,18 @@ header{
 }
 
 /* ================= SECTIONS (GLASS) ================= */
-section{
-  max-width:1200px;
-  margin:120px auto 70px;
-  padding:70px 6%;
-  border-radius:28px;
+section {
+  max-width: 1200px;
+  margin: 120px auto 60px;
+  padding: 60px 6%;
+  border-radius: 20px;
+  background: #000000;
+  box-shadow: 0 20px 60px rgba(255,255,255,0.06);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.8s ease;
 
-  background:var(--glass-bg);
-  backdrop-filter:blur(18px);
-  border:1px solid var(--glass-border);
-  box-shadow:0 30px 80px rgba(0,0,0,0.8);
-
-  opacity:0;
-  transform:translateY(60px);
-  transition:.9s ease;
+  scroll-margin-top: 100px; /* FIX */
 }
 
 section.show{
@@ -434,6 +432,7 @@ sections.forEach(sec=>observer.observe(sec));
 
 </body>
 </html>
+
 
 
 
